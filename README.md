@@ -1,2 +1,23 @@
-# connect-four-game
-A responsive Connect Four Game built using HTML, CSS, and JavaScript featuring two-player gameplay, win detection, move tracking, responsive UI, and interactive game logic.
+# 🎮 Connect Four Game
+
+A responsive Connect Four Game developed using HTML, CSS, and JavaScript.
+
+# Features
+
+- Two Player Gameplay
+- Interactive 7×6 Board
+- Horizontal, Vertical & Diagonal Win Detection
+- Draw Detection
+- Restart Game
+- Responsive Design
+- Move Counter
+- Modern User Interface
+
+# Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+## 📂 Project Structure
+
