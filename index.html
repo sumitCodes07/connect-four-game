@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Connect Four Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>🎮 Connect Four Pro</h1>
+
+<div class="controls">
+
+<input
+type="text"
+id="player1"
+placeholder="Player 1 Name"
+maxlength="12">
+
+<input
+type="text"
+id="player2"
+placeholder="Player 2 Name"
+maxlength="12">
+
+<button id="startGame">
+Start Game
+</button>
+
+<button id="restartGame">
+Restart
+</button>
+
+<button id="undoBtn">
+Undo
+</button>
+
+<button id="themeBtn">
+🌙 Theme
+</button>
+
+</div>
+
+</header>
+
+<section class="scoreBoard">
+
+<div class="score">
+
+<h2 id="name1">Player 1</h2>
+
+<p id="score1">0</p>
+
+</div>
+
+<div class="centerPanel">
+
+<h2 id="status">
+Click Start Game
+</h2>
+
+<div class="timer">
+
+⏳ <span id="time">30</span>s
+
+</div>
+
+<div class="moves">
+
+Moves :
+<span id="moveCount">
+0
+</span>
+
+</div>
+
+</div>
+
+<div class="score">
+
+<h2 id="name2">Player 2</h2>
+
+<p id="score2">0</p>
+
+</div>
+
+</section>
+
+<div class="boardContainer">
+
+<div id="board">
+
+</div>
+
+</div>
+
+<div class="bottomButtons">
+
+<button id="newGame">
+
+New Game
+
+</button>
+
+<button id="rulesBtn">
+
+Game Rules
+
+</button>
+
+<button id="resetScore">
+
+Reset Scores
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Winner Popup -->
+
+<div id="winnerPopup" class="popup hidden">
+
+<div class="popupContent">
+
+<h1>
+
+🏆 Winner!
+
+</h1>
+
+<h2 id="winnerText">
+
+Player Wins
+
+</h2>
+
+<button id="playAgain">
+
+Play Again
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Rules Popup -->
+
+<div id="rulesPopup" class="popup hidden">
+
+<div class="popupContent rules">
+
+<h2>
+
+How To Play
+
+</h2>
+
+<ul>
+
+<li>Players take turns dropping discs.</li>
+
+<li>Connect 4 discs horizontally.</li>
+
+<li>Connect 4 discs vertically.</li>
+
+<li>Connect 4 discs diagonally.</li>
+
+<li>First player to connect four wins.</li>
+
+</ul>
+
+<button id="closeRules">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Sound Effects -->
+
+<audio id="dropSound">
+
+<source src="assets/drop.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="winSound">
+
+<source src="assets/win.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="clickSound">
+
+<source src="assets/click.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- Confetti Library -->
+
+<script src="assets/confetti.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
